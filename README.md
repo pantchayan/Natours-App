@@ -17,8 +17,7 @@
 #### 6. JavaScript basic (6 videos/6 hrs): https://www.youtube.com/playlist?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc
 
 ## Completion @23rd OCT 2020
-!==================================================================================================
-
+!==========================================================================================
 #### Jquery, Node JS, Bootstrap, Materialize
 
 #### Server-client, Rest APIs, Databases(SQL and noSQL{MongoDB})
