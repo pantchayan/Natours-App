@@ -50,6 +50,7 @@ hr:after {
   }
   h2{
       text-align: center;
+      font-weight: lighter;
       color: rgb(145, 139, 139);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   }
