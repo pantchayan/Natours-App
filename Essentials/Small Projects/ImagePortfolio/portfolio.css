@@ -4,8 +4,11 @@
     margin-top: 10px;
 }
 #pp{
-    width: 100px;
-    border-radius: 25px;
+    width: 114px;
+    height: 114px;
+    border-radius: 57px;
+    border: 4px solid lightgray;
+    border-color:  linear-gradient (45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
 }
 /* 
 .search-bar{
@@ -14,7 +17,9 @@
     margin-right: 10%;    
 } */
 
-
+/* body{
+   background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+} */
 
 
 #name-banner{
@@ -71,10 +76,15 @@ hr[class="top"]:after {
       text-align: center;
   }
 
-  .picture-div{
+  /* .picture-div{
       cursor: not-allowed;
-  }
+  } */
 
   .picture{
-      margin: 13px
+      margin: 13px;
+      cursor: pointer;
+  }
+
+  .picture:hover{
+      opacity:90%;
   }
