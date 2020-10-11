@@ -14,13 +14,16 @@
     margin-right: 10%;    
 } */
 
+
+
+
 #name-banner{
     float: right;
     margin-right: 20%;
     margin-top: 15px;
 }
 
-hr {
+hr:first-of-type{
     border: none;
     border-top: 3px double #333;
     color: #333;
@@ -29,13 +32,22 @@ hr {
     height: 5px;
 }
 
-hr:after {
+hr[class="top"]:after {
     background: #fff;
     content: '§';
     padding: 0 4px;
     position: relative;
     top: -13px;
 }
+
+.main-content hr {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    color: darkgrey;
+    content: '§';
+}
+
 
 .header{
     overflow: auto;
