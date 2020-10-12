@@ -8,7 +8,7 @@ body{
 }
 
 .image img{
-    float:right;
+    float:left;
     margin:10px;
 }
 
@@ -22,5 +22,23 @@ body{
     padding:1%;
     margin:1%;
 }
+
+
+.coloumn1,.coloumn2{
+    background-color:lightblue;
+}
+
+.coloumn1{
+    float:left;
+    width:42%;
+    margin:0 2%;
+}
+
+.content:after{
+    content:"";
+    clear:both;
+    display: block;
+}
+
 
 
