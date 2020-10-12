@@ -1,0 +1,26 @@
+body{
+    background-color: darkgray;
+}
+.wrapper{
+    background-color: antiquewhite;
+    margin:10px auto;
+    width: 850px;
+}
+
+.image img{
+    float:right;
+    margin:10px;
+}
+
+.image:after{
+    content:" ";
+    clear:both;
+    display:block;
+}
+
+.content{
+    padding:1%;
+    margin:1%;
+}
+
+
