@@ -1,0 +1,106 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+    text-align: center;
+}
+
+#landing{
+    background-image: url(img/sunRise.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+#landing-text h1{
+    text-transform: uppercase;
+    color: antiquewhite;
+    font-family: 'Oswald',sans-serif;
+    font-weight:700;
+    font-size: 60px;
+    cursor: crosshair;
+}
+
+#landing-text h1:first-of-type{
+    color: darkslategray;
+}
+
+#landing-text h1:first-of-type:hover{
+    color: antiquewhite;
+}
+#landing-text h1:nth-of-type(2):hover{
+    color: darkslategrey;
+}
+
+#landing-text h2{
+    margin-top: 3%;
+    margin-bottom: 10%;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: darkslategrey;
+    text-decoration: overline;
+    cursor: crosshair;
+}
+
+#landing-text h2:hover{
+    color: antiquewhite;
+}
+
+#landing-text .btn{
+    text-align: center;
+    font-size: 16px;
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    font-weight: 650;
+    color: darkslategray;
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 1.2s;
+    
+}
+
+#landing-text .btn:hover{
+    background-color: burlywood;
+}
+
+#images{
+    margin-top: 60px;
+}
+
+.image{
+    width:70%;
+    height:850px;
+    margin: 60px 0;
+
+}
+
+
+#footer{
+    margin:60px 0;
+    text-align: center;
+}
+
+#footer h1{
+    color: antiquewhite;
+    font-family: 'Oswald',"Helvetica Neue",sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
