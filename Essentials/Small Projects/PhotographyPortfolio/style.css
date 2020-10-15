@@ -98,28 +98,41 @@ body{
     color: antiquewhite;
 }
 
+#footer hr{
+    margin-bottom: 60px;
+    content:"$";
+}
+
 #footer h1{
     color: antiquewhite;
     font-family: 'Oswald',"Helvetica Neue",sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 10px;
+    cursor: crosshair;
 }
 
 #footer h2{
     color: lightslategrey;
     margin-bottom: 20px;
+    cursor: crosshair;
 }
 
 #footer .btn{
     width: 110px;
     font-size: 15px;
+    height:30px;
+    border-radius: 10px;
     cursor: pointer;
+    background-color: antiquewhite;
+    color: #212123;
+    border: none;
     font-weight:bold;
+    transition: background-color 0.5s;
 }
 
 #footer .btn:hover{
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    background-color: cadetblue;
 }
 
 #footer p{
