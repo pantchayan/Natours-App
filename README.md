@@ -20,8 +20,8 @@ https://www.youtube.com/playlist?list=PL4cUxeGkcC9hudKGi5o5UiWuTAGbxiLTh
 #### 5. CSS Flexbox (12 videos): 🚩
 https://www.youtube.com/playlist?list=PL4cUxeGkcC9i3FXJSUfmsNOx8E7u6UuhG
 
-#### 6. JavaScript basic (6 videos/6 hrs):
-https://www.youtube.com/playlist?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc
+#### 6. JavaScript (Udemy course by The Net Ninja):
+https://www.udemy.com/course/modern-javascript-from-novice-to-ninja/
 
 ---
 ## Expected completion on 23rd OCT 2020 🏁
