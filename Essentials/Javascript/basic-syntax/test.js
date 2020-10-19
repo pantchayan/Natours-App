@@ -15,7 +15,7 @@
 
 
 
-// Regular function to arrow conversion practice
+// Regular function to arrow conversion practice ==========
 
 // const greet = function(){
 //     return 'hello, world';
@@ -25,7 +25,7 @@ const greet = () => 'hello, world';
 
 let string = greet();
 
-console.log(string);
+//console.log(string);
 
 
 const bill = (products, tax) =>{
@@ -36,6 +36,59 @@ const bill = (products, tax) =>{
     return total;
 };
 
+//console.log(bill([10,15,30], 0.2));
+
+// For each method ===========================
+let people = ['chayan','vansu','mario','tvf'];
+
+people.forEach((person)=>{
+   // console.log(person);
+});
 
 
-console.log(bill([10,15,30], 0.2));
+// Callback function concept =====================
+
+const main = (callback)=>{
+    let value = 5;
+    callback(value);
+};
+
+
+// main((value)=>{
+//     console.log(value+5);
+// });
+
+
+// Objects ===============================
+
+
+let user = {
+    name: 'Vansu',
+    age: 18,
+    marks:[20,23,21,22,20],
+    hobbies:[
+        {number:1,title:'chayan'},
+        {number:2,title:'chayan'}
+    ],
+    allMarks(){
+        this.marks.forEach(mark=>{
+            console.log(mark);   
+        })
+    },
+    allHobbies(){
+        this.hobbies.forEach(hobby=>{
+            console.log(hobby.number+" "+hobby.title);
+        })
+    }
+};
+
+
+//user.allHobbies();
+
+
+// Math object(similar to java)============================
+
+// console.log(Math);
+
+// console.log(Math.PI);
+
