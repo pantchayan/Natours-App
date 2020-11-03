@@ -1,4 +1,4 @@
-# Front-end-WebD 
+# Web-Development
 
 ## Resources 👨🏽‍💻
 
