@@ -17,7 +17,6 @@ form.addEventListener("submit",e=>{
     if(e.target[5].checked==true) marks++;
     if(e.target[6].checked==true) marks++;
 
-    console.log(marks);
     scrollTo(0,0);
     displayPercentage(marks);
 });
