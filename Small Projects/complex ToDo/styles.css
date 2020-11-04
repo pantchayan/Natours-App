@@ -22,7 +22,10 @@ input[type=text]:focus{
 
 }
 
+.filtered{
+    visibility: hidden;
+}
+
 .delete{
     cursor: pointer;
-
 }
