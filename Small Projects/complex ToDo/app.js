@@ -16,3 +16,12 @@ const addTask = (task)=>{
 };
 
 
+const delBtn = document.querySelector("ul");
+
+delBtn.addEventListener("click",e=>{
+    if(e.target.tagName == "I"){
+        e.path[1].remove();
+    } 
+});
+
+
