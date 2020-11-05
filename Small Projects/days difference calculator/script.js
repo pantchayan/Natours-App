@@ -17,7 +17,14 @@ const calculateDiff = (pastDateStr) =>{
     let pastDate = new Date(pastDateStr);
     let timestampDiff = now.getTime() - pastDate.getTime();
     let daysDiff = Math.round(timestampDiff/1000/60/60/24);
-    displayDate(daysDiff);
+    if(isNaN(daysDiff)){
+        console.log( daysDiff);
+        alert("Please enter the date in correct format.");
+    }
+    else{
+        console.log(daysDiff);
+        displayDate(daysDiff);
+    }
 };
 
 // displaying difference in dates 
