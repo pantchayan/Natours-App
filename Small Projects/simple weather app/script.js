@@ -36,7 +36,7 @@ const getLocationKey = (location)=>{
             inputText.value="";
         }
     }).catch(err=>{
-        console.log(err);
+        alert(err +" Request count exceeded 1.");
     });
 }
 
@@ -56,6 +56,6 @@ const getData = (Key) =>{
         console.log(data[0].Temperature.Metric.Value,data[0].Temperature.Metric.Unit);
     })
     .catch(err=>{
-        console.log(err);
+        alert(err+" Request count exceeded 2.");
     })
 }   
