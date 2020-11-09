@@ -1,25 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rick and Morty</title>
-    <link rel ="stylesheet" href = "src/styles.css">
+    <link rel="stylesheet" href="src/styles.css">
+    
 </head>
+
 <body>
-    <div class="header">
-        <h1>Rick and Morty Characters</h1>
+
+    <div id="landing">
+
+        <div class="header">
+            <img src="src/img/logo.png" height="150px">
+            <h1>Characters</h1>
+            <h2>Which one of them are you ?</h2>
+        </div>
+
+        <div class="char-input">
+            <form>
+                <input type="button" type="submit" value="Get Your Character !">
+            </form>
+        </div>
+
     </div>
 
-    <div class="char-input">
-        <form>
-            <input type="button" value="Get Your Character !">
-        </form>
-    </div>
+    
+
+    <!-- <div class="parallax-window" data-parallax="scroll" data-image-src="https://images5.alphacoders.com/796/796108.jpg"></div> -->
+    
+   
 
     <!-- CODE A DETAIL CARD -->
+    <div id="result">
+        <div class="box">
+            <h2 class="char-info">Congrats You Are ..</h2>
+            <img src="" alt="Your Character" width="200" height="250">
+            <p class="center">
+                <b>Name:</b> --<br>
+                <b>Status:</b> --<br>
+                <b>Species:</b> --<br>
+                <b>Gender:</b> --<br>
+                <b>Location:</b> --<br>
+                <b>Origin:</b> --</p>
+        </div>
+    </div>
+
     
-    
-    <script src ="src/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="src/parallax script/parallax.js"></script>
+    <script src="src/app.js"></script>
 </body>
+
 </html>
