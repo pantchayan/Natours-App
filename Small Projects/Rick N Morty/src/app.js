@@ -13,7 +13,7 @@ input.addEventListener("click" , e=>{
     let characterId = Math.floor((Math.random() * 100)+1);
 
     console.log(characterId)
-
+    localStorage.setItem("id",characterId);
     getData(characterId);
     // let character = e.target[0].value;
     // getData(character);
@@ -51,3 +51,8 @@ const showData = (charData) =>{
     resultImage.src = charData.image;
     window.scrollTo(0,document.body.scrollHeight);
 };
+
+
+if(localStorage.getItem('id')){
+    getData(localStorage.getItem('id'));
+}
