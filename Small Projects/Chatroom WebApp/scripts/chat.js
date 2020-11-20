@@ -29,7 +29,20 @@ class chatRoom{
         return response;
     }
 
-    
+    getChat(){
+        this.chats
+        .where('room','==',this.room)
+        .orderBy('created_at')
+        .onSnapshot(snapshot=>{
+            // console.log(snapshot.docChanges());
+            snapshot.docChanges().forEach(change => {
+                if(change.type==='added'){
+                    console.log(change.doc.data());
+                }
+            });
+        })
+    }
+
 
 }
 
@@ -37,12 +50,14 @@ class chatRoom{
 
 let cr = new chatRoom("general","Chayan");
 
-console.log(cr);
+// console.log(cr);
 
 
-cr.addChat("Fancy a game of chess?")
-    .then(resolve=>{
-        console.log("Chat added");
-    }).catch(err=>{
-        console.log(err);
-    })
+// cr.addChat("Fancy a game of chess?")
+//     .then(resolve=>{
+//         console.log("Chat added");
+//     }).catch(err=>{
+//         console.log(err);
+//     })
+
+cr.getChat();
