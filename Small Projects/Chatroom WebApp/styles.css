@@ -1,0 +1,32 @@
+body{
+    background-image: url("https://images4.alphacoders.com/909/thumb-1920-909912.png");
+}
+
+body{
+    /* background-color: #23272a; */
+    padding-bottom: 40px;
+}
+
+.container h1{
+    color:#ffffff;
+}
+
+.chat-rooms .my-2{
+    color: #99aab5;
+}
+
+.chat-rooms .btn{
+    background-color: #7289da;
+    color: #ffffff;
+}
+
+.input-group-append .btn{
+    background-color: #7289da;
+    color: #ffffff;
+    width:80px;
+}
+
+.input-group-text{
+    background-color: #2c2f33;
+    color: #99aab5;
+}
