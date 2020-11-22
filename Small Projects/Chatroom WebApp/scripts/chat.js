@@ -30,7 +30,7 @@ class chatRoom{
         return response;
     }
 
-    getChat(){
+    getChats(callback){
         // Unsubscribe function returned from realtime listener
 
         this.unsub = this.chats
@@ -40,7 +40,7 @@ class chatRoom{
             // console.log(snapshot.docChanges());
             snapshot.docChanges().forEach(change => {
                 if(change.type==='added'){
-                    console.log(change.doc.data());
+                    callback(change.doc.data());
                 }
             });
         })
@@ -48,6 +48,7 @@ class chatRoom{
 
     updateName(username){
         this.username = username;
+        localStorage.setItem('username', username);
     }
 
     updateRoom(room){
@@ -62,7 +63,7 @@ class chatRoom{
 
 
 
-let cr = new chatRoom("general","Chayan");
+// let cr = new chatRoom("general","Chayan");
 
 // console.log(cr);
 
