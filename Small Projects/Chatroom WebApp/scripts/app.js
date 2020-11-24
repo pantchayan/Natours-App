@@ -50,7 +50,7 @@ rooms.addEventListener('click',e=>{
 
 chatList.addEventListener('click',e=>{
     if(e.target.tagName==="I"){
-        console.log(e.path[1].dataset.id);
+        // console.log(e.path[1].dataset.id);
 
         const id = e.path[1].dataset.id;
         db.collection('chats').doc(id).delete().then(()=>{

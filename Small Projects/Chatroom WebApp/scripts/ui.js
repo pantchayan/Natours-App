@@ -28,10 +28,10 @@ class chatUI{
 
     delete(id){
         const lists = this.list.getElementsByTagName("li");
-        console.log(lists);
+        // console.log(lists);
         for (var i = 0, len = lists.length; i < len; i++ ) {
             if(lists[i].getAttribute('data-id')===id){
-                    console.log(lists[i]);
+                    // console.log(lists[i]);
                     lists[i].remove();
             }
         }
