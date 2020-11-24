@@ -8,21 +8,39 @@ class chatUI{
     clear(){
         this.list.innerHTML = ``;
     }
-    render(data){
+    render(data,id){
         //data ==> chat object
         const prev = data.created_at.toDate().getTime();
         const curr = new Date().getTime();
         const when = timeDifference(curr,prev);
         const html = `
-            <li class="list-group-item">
+            <li class="list-group-item" data-id="${id}">
                 <span class="username">${data.username}</span>
                 <span class="message">${data.message}</span>
+                <i class="far fa-trash-alt delete"></i>
                 <div class="time">${when}</div>
             </li>
         `;  
 
-        console.log("I am inside render");
+        // console.log("I am inside render");
         this.list.innerHTML += html;
+    }
+
+    delete(id){
+        const lists = this.list.getElementsByTagName("li");
+        console.log(lists);
+        for (var i = 0, len = lists.length; i < len; i++ ) {
+            if(lists[i].getAttribute('data-id')===id){
+                    console.log(lists[i]);
+                    lists[i].remove();
+            }
+        }
+        // this.list.forEach(item=>{
+        //     if(item.getAttribute('data-id')===id){
+        //         console.log(item);
+        //         item.remove();
+        //     }
+        // })
     }
 }
 

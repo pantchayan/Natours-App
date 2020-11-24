@@ -98,7 +98,7 @@ form.addEventListener('submit',e=>{
 
 list.addEventListener('click',e=>{
     if(e.target.tagName === 'BUTTON'){
-        //console.log(e.path[1].dataset.id);
+        console.log(e.path[1]);
 
 
         const id = e.path[1].dataset.id;

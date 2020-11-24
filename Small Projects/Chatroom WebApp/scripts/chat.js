@@ -39,8 +39,12 @@ class chatRoom{
         .onSnapshot(snapshot=>{
             // console.log(snapshot.docChanges());
             snapshot.docChanges().forEach(change => {
-                if(change.type==='added'){
-                    callback(change.doc.data());
+                if(change.type==='added' ){
+                    // console.log(change.doc.id);
+                    callback(change.doc.data(),change.doc.id,1);
+                }
+                else if(change.type === 'removed'){
+                    callback(change.doc.data(),change.doc.id,2);
                 }
             });
         })

@@ -47,6 +47,11 @@ body{
     color: #ffffff;
 }
 
+.chat-list li i{
+    float: right;
+    cursor: pointer;
+}
+
 .username{
     color: #99aab5;
     font-size: 13px;
