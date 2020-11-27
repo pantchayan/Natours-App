@@ -34,7 +34,7 @@ https://www.udemy.com/course/modern-javascript-from-novice-to-ninja/
 https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/
 
 ---
-## Expected completion by 2021 🏁
+## Expected completion by December 2020 🏁
 ---
 
 ### Misc/Next: 🔥
