@@ -20,7 +20,7 @@ https://www.youtube.com/playlist?list=PL4cUxeGkcC9gQeDH6xYhmO-db2mhoTSrT
 #### 4. CSS Positioning (12 videos): ✅
 https://www.youtube.com/playlist?list=PL4cUxeGkcC9hudKGi5o5UiWuTAGbxiLTh
 
-#### 5. CSS Flexbox (12 videos): 
+#### 5. CSS Flexbox (12 videos): ✅
 https://www.youtube.com/playlist?list=PL4cUxeGkcC9i3FXJSUfmsNOx8E7u6UuhG
 
 #### 6. Novice to Ninja (JavaScript): ✅
