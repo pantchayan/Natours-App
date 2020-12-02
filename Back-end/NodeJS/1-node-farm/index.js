@@ -26,24 +26,31 @@ const dataObj = JSON.parse(data);
 
 
 const server = http.createServer((req, res) => {
-    const pathName = req.url;
+    const {query, pathname} = url.parse(req.url,true);
 
     //OVERVIEW
-    if (pathName === "/" || pathName === "/overview") {
+    if (pathname === "/" || pathname === "/overview") {
+        res.writeHead(200,{"Content_type": "text/html"});
+        
         const cardsHTML = dataObj.map(el=>{
             return replaceTemplate(tempCard,el);
         }).join("");
 
-        const outputHTML = tempOverview.replace("{%PRODUCT_CARDS%}",cardsHTML); 
+        const output = tempOverview.replace("{%PRODUCT_CARDS%}",cardsHTML); 
 
-        res.end(outputHTML);
+        res.end(output);
     }
     //PRODUCT
-    else if (pathName === "/product") {
-        res.end("This is a product");
+    else if (pathname === "/product") {
+        res.writeHead(200,{"Content_type": "text/html"});
+
+        const product = dataObj[query.id];
+        const output = replaceTemplate(tempProduct,product);
+
+        res.end(output);
     }
     //API
-    else if (pathName === "/api") {
+    else if (pathname === "/api") {
 
         res.writeHead(200, { "Content_type": "application/json" });
         res.end(data);
