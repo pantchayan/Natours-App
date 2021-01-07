@@ -1,5 +1,6 @@
 // Modules ======================================
 const express = require('express');
+
 const app = express();
 const morgan = require('morgan');
 
@@ -11,6 +12,7 @@ const userRouter = require('./routes/userRoutes');
 
 app.use(morgan('dev'));
 app.use(express.json());
+app.use(express.static(`${__dirname}/public`));
 
 // Routes ====================================
 
