@@ -31,10 +31,7 @@ https://www.udemy.com/course/modern-javascript-from-novice-to-ninja/
 ## BACK-END => {NodeJS, Express, and MongoDB}
 
 #### Node.js, Express, MongoDB & More: The Complete Bootcamp 2020 @Udemy (42 Hours content) 🎯
-https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/
-
----
-## Expected completion by December 2020 🏁
+https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/ 🏁
 ---
 
 ### Misc/Next: 🔥
