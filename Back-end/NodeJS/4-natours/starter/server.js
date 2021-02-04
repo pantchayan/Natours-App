@@ -1,4 +1,4 @@
-// START SERVER  =====================================================================
+// START SERVER  ====================================================================
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 
